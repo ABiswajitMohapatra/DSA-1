@@ -49,7 +49,7 @@ int main() {
                 break;
             }
         }
-        // If A1[i] is unique, print it
+        // If A1[i] isunique, print it
         if (isUnique) {
             cout << A1[i] << endl;
         }
