@@ -1,5 +1,14 @@
 #include <iostream>
 using namespace std;
+// void bubbleSort(int arr[],int size){
+//     for(int i = size-1;i>=0;i--){
+//         for(int j = 0;j<i;j++){
+//             if(arr[j]>arr[j+1]){
+//                 swap(arr[j],arr[j+1]);
+//             }
+//         }
+//     }
+// }
 void Check_Bubble(int A[],int size){
     for(int i=size-1;i>0;i--){
         int hasSort=0;
