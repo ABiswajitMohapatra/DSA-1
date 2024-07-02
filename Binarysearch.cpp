@@ -63,15 +63,15 @@ int binarySearch(int arr[], int size, int target) {
             right = mid - 1;
         }
     }
-return -1; 
+return count; 
 }
 
 
 int main() {
-    int arr[] = {2,3,4,6,8,4,3,6,8};
+    int arr[] = {2,3,2,4,6,8,4,3,6,8};
     int size = sizeof(arr) / sizeof(arr[0]);
     int target = 2;  
-    int index = binarySearch(arr, size, target);
+   // int index = binarySearch(arr, size, target);
     int c = binarySearch(arr, size, target);
     
     cout << "Number of occurrences of " << target<< " in the array: " << c <<endl;

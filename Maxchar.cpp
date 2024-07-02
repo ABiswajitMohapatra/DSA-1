@@ -1,4 +1,4 @@
-// find the max number of character ocuur in the input string:
+// find the max number of character occur in the input string:
 #include <iostream>
 using namespace std;
 
@@ -7,7 +7,5 @@ int main() {
     cin>>str;
     int count=0;
     for(int i=0;i<str.length();i++){
-        if()
-    }
-    
+      
 }

@@ -14,15 +14,7 @@ char toLowercase(char ch){
        return temp;
          }
 }
-bool checkpalindrome(char arr[],int size){
-}
+
 int main() {
-   char arr[] ="A& kghbnmani, a pla@n, a canal, Panama!";
-    int size = sizeof(arr) / sizeof(arr[0]) - 1; 
-    if(checkpalindrome(arr, size)){
-        cout << "The string is a palindrome." << endl;
-    }else{
-        cout << "The string is not a palindrome." << endl;
-    }
    
 }
