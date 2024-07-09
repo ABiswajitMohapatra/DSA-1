@@ -10,19 +10,19 @@ class stack{
     top=-1;
    }
    void push(int val){
-    if(top=size-1){
-        cout<<"Stack overflow"<<endl;
-        return;
-    }
+    if(size-top>1){
           top++;
           arr[top]=val;
+   }else{
+    cout<<"Stack overflow"<<endl;  
+   }
    }
   void pop(){
-    if(top==-1){
-        cout<<"stack underflow"<<endl;
-        return;
+    if(top>=0){
+      top--;
+    }else{
+       cout<<"stack underflow"<<endl;
     }
-    top--;
   }
   int peek(){
     if(top>=0) {
@@ -35,9 +35,15 @@ class stack{
   }
 };
 int main() {
-    stack st;
+    stack st(6);
     st.push(10);
     st.push(2);
+    st.pop();
+    cout<<st.peek()<<endl;
+    st.pop();
+    cout<<st.peek()<<endl;
+
+
 
 
 }
