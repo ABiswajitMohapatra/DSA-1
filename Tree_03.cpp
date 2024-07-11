@@ -20,19 +20,16 @@ void printlevelOrder(Node* root) {
     // Create a queue and push the root node
     queue<Node*> q;
     q.push(root);
-
     while (!q.empty()) {
         int levelSize = q.size(); // Get the current level size
         for (int i = 0; i < levelSize; i++) {
             Node* temp = q.front();
             q.pop();
             cout << temp->data << " ";
-
             // Enqueue left child
             if (temp->left != NULL) {
                 q.push(temp->left);
             }
-
             // Enqueue right child
             if (temp->right != NULL) {
                 q.push(temp->right);
@@ -113,7 +110,7 @@ int  replaceWithsum(Node* root){
     if(root->left!=NULL){
         return root->data+=root->left->data;
     }
-    if((root->right != NULL) ){
+    if(root->right != NULL) {
         return  root->data+=root->right->data;
     }
      root->data=sum;

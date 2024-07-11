@@ -25,7 +25,7 @@ void Inorder(Node* root){
         return;
     }
     //print root:
-    cout<<root->data<<" ";
+    
     preorder(root->left);
     cout<<root->data<<" ";
     preorder(root->right);
