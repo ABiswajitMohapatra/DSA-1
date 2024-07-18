@@ -1,88 +1,70 @@
 
 //INSERTION AT  A PARTICULAR POSITION:
 /*
-#include <iostream>
+include <iostream>
 using namespace std;
-void Insert(int A[],int size,int pos,int ele){
-    for(int i=size;i>=pos;i--){
-        A[i+1]=A[i];
-    }
-    A[pos]=ele;
-    for(int i=0;i<size+1;i++){
-        cout<<A[i]<<" ";
-    }
-    cout<<endl;
+void Insert(int A[],int size,int pos,int element){
+  for(int i=size-1;i>=pos;i--){
+    A[i+1]=A[i];
+  }
+  A[pos]=element;
+  for(int i=0;i<size+1;i++){
+    cout<<A[i]<<" ";
+  }
 }
-int main(){
-    int size,pos,ele;
-    cout<<"Enter size:";
-    cin>>size;
-    int A[size];
-    cout <<"Enter array elements:";
-    for(int i=0;i<size;i++){
-        cin>>A[i];
-    }
-    cout<<"Enter postion:";
-    cin>>pos;
-    cout<<"Enter element";
-    cin>>ele;
-    Insert(A,size,pos,ele);
+int main() {
+    int A[]={1,2,3,4,5,6};
+    int size=sizeof(A)/sizeof(A[0]);
+    int pos=0;
+    int element=23;
+    Insert(A,size,pos,element);
+    return 0;
 }
 
 */
-// DLELETION:
+
+//DELETION AT  A PARTICULAR POSITION:
+
+
 /*
 #include <iostream>
 using namespace std;
-void Insert(int A[],int size,int ele){
-    for(int i=ele;i<size;i++){
-        A[i]=A[i+1];
+void Insert(int A[],int size,int pos){
+  for(int i=pos;i<=size;i++){
+    A[i]=A[i+1];
+  }
+
+  for(int i=0;i<size-1;i++){
+    cout<<A[i]<<" ";
+  }
+}
+int main() {
+    int A[]={1,2,3,4,5,6};
+    int size=sizeof(A)/sizeof(A[0]);
+    int pos=4;
+    Insert(A,size,pos);
+    return 0;
+}
+
+*/
+
+//LEFT ROTATION:
+
+#include <iostream>
+using namespace std;
+void LeftRotation(int A[],int size){
+   int  temp=A[0];
+    for(int i=1;i<size;i++){
+        A[i-1]=A[i];
     }
+    A[size-1]=temp;
     for(int i=0;i<size;i++){
         cout<<A[i]<<" ";
     }
-    cout<<endl;
 }
-int main(){
-    int size,ele;
-    cout<<"Enter size:";
-    cin>>size;
-    int A[size];
-    cout <<"Enter array elements:";
-    for(int i=0;i<size;i++){
-        cin>>A[i];
-    }
-    cout<<"Enter element:";
-    cin>>ele;
-    Insert(A,size,ele);
-}
-
-
-*/
-#include <iostream>
-using namespace std;
-void bubblesort(int A[],int size){
-   for(int i=0;i<size;i++){
-    for(int j=0;j<size-1;j++){
-        if(A[j]<A[j+1]){
-            int temp=A[j];
-            A[j]=A[j+1];
-            A[j+1]=temp;
-        }
-    }
-   }
-   for(int i=0;i<size;i++){
-    cout<<A[i]<<" ";
-   }
-}
-int main(){
-    int size;
-    cout<<"Enter size:";
-    cin>>size;
-    int A[size];
-    cout <<"Enter array elements:";
-    for(int i=0;i<size;i++){
-        cin>>A[i];
-    }
-    bubblesort(A,size);
+int main() {
+     int A[]={123,121,2,3,4,5,6};
+    int size=sizeof(A)/sizeof(A[0]);
+    LeftRotation(A,size);
+    return 0;
 }

@@ -89,6 +89,21 @@ cout<<*(B+3)<<endl;
 cout<<*(B+4)<<endl;
 cout<<*(B+5)<<endl;
 
+
+int A12[]={1,2,3,4,5};
+int key=3;
+int found=-1;
+for(int i=0;i<5;i++){
+    if(A12[i]==key){
+        found=i;
+        break;
+    }
+}
+if(found!=-1){
+    cout<<"found at :"<<found;
+}else{
+    cout<<"not found"<<endl;
+}
 }
 
 

@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 int main() {
-
-
 //Linear search:
 int A[]={13,24,45,89,90};
 int key=89;
