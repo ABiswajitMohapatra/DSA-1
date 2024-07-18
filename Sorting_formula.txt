@@ -1,0 +1,29 @@
+ BUBBLE SORT:
+
+ 1-> 2 LOOPS 
+ 2-> RANGE-> SIZE-1 (i) AND SIZE-1-i(J);
+ 3> SWAP I AND J 
+
+
+ SELECTION SORT:
+
+
+ 2 LOOPS
+ INITIALIZE CURR VARIABLE
+ RANGE(SIZE -1) AND J (SIZE)
+ SWAP WITH CURERNT AND J 
+
+ insertion:
+
+initialize=size-1 se pos tak ulta chalega i--
+i+1=i;
+
+deletion:
+element se size -1 chalega 
+i=i+1;
+
+
+rotation:
+temp=A[0]
+i-1=i;
+A[size-1]=temp
