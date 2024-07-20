@@ -10,9 +10,6 @@ void search(int A[][3],int row,int col,int key){
                 break;
             }
         }
-          if(found){
-            break;
-          }
     }
     if(!found){
         cout<<"Not found"<<endl;
@@ -20,7 +17,7 @@ void search(int A[][3],int row,int col,int key){
     }
 
 int main() {
-    int key=92;
+    int key=38;
     const int row=3;
     const int col=3;
     int A[row][col]={{1,2,3},{4,5,6},{7,8,9}};

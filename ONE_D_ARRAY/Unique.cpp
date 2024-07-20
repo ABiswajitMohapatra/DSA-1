@@ -7,7 +7,7 @@ void UniqueElement(int A[],int size){
         for(int j=0;j<i;j++){
             if(A[i]==A[j]){
                 isunique=true;
-                
+
                 break;
             }
         }

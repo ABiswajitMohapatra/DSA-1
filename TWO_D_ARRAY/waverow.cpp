@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void wave(int A[][3],int row,int col){
+void wave(int A[][3],int row,int col){           
         for(int i= 0; i < col; i++){
             if(i%2==0){
                 for(int j=0;j<row;j++){
