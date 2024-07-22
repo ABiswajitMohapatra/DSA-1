@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
-void palindrome(string str){
-    string temp=str;
-    string rev=" ";
-    for(int i=0;i<str.length();i++){
-        rev=str[i]+rev;
+bool palindrome(string str){
+    int start=0;
+    int end=str.size()-1;
+    while(start<end){
+        if(str[start]!=str[end]){
+            return false;
+        }
+        start++;
+        end--;
     }
-    cout<<rev<<endl;
-    if(temp==rev){
-        cout<<"The string is a palindrome"<<endl;
-    }else{
-        cout<<"The string is not a palindrome"<<endl;
-    }
+  return true;
 }
 int main() {
-    string str="bisib";
-    palindrome(str);
+    string str="abisiba";
+    if(palindrome(str))  cout<<"plaindrome";
+    else    cout<<"not plindrome";
     return 0;
 }
