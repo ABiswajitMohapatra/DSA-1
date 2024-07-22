@@ -1,0 +1,16 @@
+1->Reverse string
+2->plaindrome string
+3->Anagram string
+4->Rotation string
+5->is valid palindrome
+6->sort string
+7->Duplicate char 
+8->parenthesis check
+9->remove duplicate char
+10->reverse string in word
+11->find char occurance
+12->find non repeating char
+13->find longest substring
+14->remove special cheracter
+15->palindromic substring
+16->longest palindromic substring
