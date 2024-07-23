@@ -59,37 +59,6 @@ int main() {
 }
 */
 
-// UNIQUEVALUE IN THE ARRAY:
-/*
-#include <iostream>
-using namespace std;
-void Unique(int A[],int size){
-    int i=0;
-    int count=0;
-    for(int j=i+1;j<size;j++){
-        if(A[i]!=A[j]){
-            i++;
-            A[i]=A[j];
-            count++;
-        }
-    }
-    for(int i=0;i<count;i++){
-        cout<<A[i]<<" ";
-    }
-}
-int main() {
-   cout<<"Enter your array size:";
-    int size;
-    cin>>size;
-    int A[size];
-    cout<<"Enter elements of array:";
-    for (int i=0;i<size;i++){
-        cin>>A[i];
-    }
-    cout<<"Unique elements are:";
-    Unique(A,size);
-}
-*/
 
 //DUPLICATE VALUE IN THE ARRAY:
 

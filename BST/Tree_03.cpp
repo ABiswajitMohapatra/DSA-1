@@ -42,12 +42,10 @@ int LevelOrderSumAtLevel(Node* root, int k) {
     if (root == nullptr) {
         cout << "Empty tree" << endl;
         return 0;
-    }
-
+    }                           
     queue<Node*> q;
     q.push(root);
     int currentLevel = 0;
-
     while (!q.empty()) {
         int levelSize = q.size();
         int levelSum = 0;
