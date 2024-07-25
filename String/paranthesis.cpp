@@ -18,7 +18,8 @@ bool isvalidparenthesis(string str){
 return temp.size()==0;
 }
 int main() {
-    string str="({[]})";
-   cout<< isvalidparenthesis( str);
+    string str="({[]]})";
+   if(isvalidparenthesis( str)) cout<<"This is valid paranthesis"<<endl;
+   else cout<<"not"<<endl;
     return 0;
 }
