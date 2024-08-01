@@ -33,7 +33,7 @@ int Evaluate_postfix(string str){
     return st.top();
 }
 int main() {
-    string str="23+5*";
+    string str="138*+";
     cout<<Evaluate_postfix(str);
     return 0;
 }

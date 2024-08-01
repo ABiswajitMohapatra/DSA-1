@@ -7,7 +7,6 @@ int evaluate_prefix(string str){
     stack<int>st;
      for(int i=str.length()-1;i>=0;i--){
         char c=str[i];
-     
         if(isdigit(c)){
             st.push(c-'0');
         }else{

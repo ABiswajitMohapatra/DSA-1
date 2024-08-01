@@ -1,7 +1,6 @@
 #include<iostream> 
 using namespace std;
 #include <stack>
-#include <string>
 void Reverse(string str)
 {
     stack<string> st;
@@ -21,6 +20,7 @@ void Reverse(string str)
         cout << st.top() << " ";
         st.pop();
     }
+    
 }
 int main()
 {
