@@ -1,7 +1,5 @@
 // #include <iostream>
-
 // using namespace std;
-
 // // Function to perform binary search on a sorted array
 // // Returns the index of the target element if found, otherwise returns -1
 // int binarySearch(int arr[], int size, int target) {

@@ -37,26 +37,7 @@ int main() {
 */
 
 
-    int A1[] = {1, 2, 1, 3, 4, 5, 6, 7,1,1,2};
-    int l = sizeof(A1) / sizeof(A1[0]);
-    int count=0;
-    for (int i = 0; i < l; i++) {
-        bool isUnique = true; 
-        for (int j = 0; j < i; j++) {
-            if (A1[i] == A1[j]) {
-                isUnique = false;
-                count++;
-                break;
-            }
-        }
-        // If A1[i] isunique, print it
-        if (isUnique) {
-            cout << A1[i] << endl;
-        }
-    }
-
-  
-
+   
 
 //Pair sum
 /*

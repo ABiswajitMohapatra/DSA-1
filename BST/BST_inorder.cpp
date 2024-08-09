@@ -31,7 +31,7 @@ void inorder(Node* root){
 }
 int main() {
     Node* root=NULL;
-    root=insertBst(root,4);
+    root=insertBst(root,4); 
     insertBst(root,3);
     insertBst(root,45);
     insertBst(root,32);

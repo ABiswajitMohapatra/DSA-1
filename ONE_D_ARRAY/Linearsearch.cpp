@@ -21,31 +21,3 @@
 // }
 
 
-#include <iostream>
-using namespace std;
-void search(int A[][3],int row,int col,int key){
-    int found=-1;
-    for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
-            if(A[i][j]==key){
-                found=i,j;
-                break;
-            }
-        }
-          if(found!=-1){
-           cout<<"found at "<<found<<endl;
-          }else{
-          cout<<"not found"<<endl;
-          }
-    }
-    
-    }
-
-int main() {
-    int key=9;
-    const int row=3;
-    const int col=3;
-    int A[row][col]={{1,2,3},{4,5,6},{7,8,9}};
-    search(A,row,col,key);
-    return 0;
-}

@@ -4,7 +4,6 @@ void Check_Bubble(int A[],int size){
     for(int i=size-1;i>0;i--){
         int hasSort=0;
         for(int j=0;j<i;j++){
-            
             if(A[j]>A[j+1]){
                 swap(A[j],A[j+1]);
                      hasSort=1;

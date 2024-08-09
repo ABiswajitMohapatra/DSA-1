@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int findFirstOccurance(int arr[],int size,int key){
     int start = 0;
     int end = size-1;
