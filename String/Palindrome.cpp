@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 bool palindrome(string str){
+    string temp="";
+    for(char c:str){
+        if(isalnum(c)){
+            temp+=tolower(c);
+        }
+    }
+
     int start=0;
     int end=str.size()-1;
     while(start<end){
@@ -13,7 +20,7 @@ bool palindrome(string str){
   return true;
 }
 int main() {
-    string str="abisiba";
+    string str="AabisibaA";
     if(palindrome(str))  cout<<"plaindrome";
     else    cout<<"not plindrome";
     return 0;

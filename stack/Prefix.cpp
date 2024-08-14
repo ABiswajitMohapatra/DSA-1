@@ -1,6 +1,5 @@
 #include <iostream>
 #include <stack>
-#include <string>
 #include <cctype>
 using namespace std;
 int evaluate_prefix(string str){

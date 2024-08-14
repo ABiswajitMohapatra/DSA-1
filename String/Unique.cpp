@@ -11,7 +11,7 @@ void unique_(string s){
   }
 }
 int main() {
-    string s="andhbbhjea";
+    string s="andhbbhjeakk";
     unique_(s);
     return 0;
 }

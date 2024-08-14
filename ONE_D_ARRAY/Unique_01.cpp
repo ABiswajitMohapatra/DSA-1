@@ -18,8 +18,7 @@ void All_Unique(int A[],int size){
         bool isunique=false;
         for(int j=0;j<i;j++){
             if(A[i]==A[j]){
-                isunique=true;
-                
+                isunique=true;   
             }
         }
         if(!isunique){

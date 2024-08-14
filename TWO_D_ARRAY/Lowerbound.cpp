@@ -19,7 +19,7 @@ int lowerBound(int arr[],int size,int key){
 }
 
 int upperBound(int arr[],int size,int key){
-    int start = 0, end = size-1, answer = size, mid;
+    int start = 0, end = size-1, answer, mid;
     while(start<=end){
         mid = (start+end)/2;
         if(arr[mid]<=key){

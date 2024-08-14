@@ -2,7 +2,7 @@
 using namespace std;
 #include<stack>
 void Rev(string str){
-    stack<int>s;
+    stack<char>s;
     for(char ch:str){
         s.push(ch);
     }

@@ -10,7 +10,7 @@ int Unique(string str){
             }
         }
         if(found){
-            return i;
+            return str[i];
         }
     }
     return -1;
@@ -18,6 +18,7 @@ int Unique(string str){
 
 int main() {
     string str="abcdab";
-    cout<<Unique(str);
+    char res=Unique(str);
+    cout<<res;
     return 0;
 }
