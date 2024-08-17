@@ -16,5 +16,5 @@ int main() {
             cin >> A[i][j];
         }
     }
-    cout<<"Sum"<<(Add(A, 3, 3));
+    cout<<"Sum:"<<(Add(A, 3, 3));
 }

@@ -32,7 +32,7 @@ int main() {
     int A[]={1, 5, 7, 5, 8, 9, 11, 11, 2, 5, 6};
     int size=sizeof(A)/sizeof(A[0]);
     Distinct(A,size);
-   All_unique(A,size);
+    All_unique(A,size);
     return 0;
 }
 //Write a C++ program to find and print all distinct elements of a given array of integers.?

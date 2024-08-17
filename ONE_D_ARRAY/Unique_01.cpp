@@ -15,13 +15,13 @@ void Unique(int A[],int size){
 }
 void All_Unique(int A[],int size){
     for(int i=0;i<size;i++){
-        bool isunique=false;
+        bool isunique=true;
         for(int j=0;j<i;j++){
             if(A[i]==A[j]){
-                isunique=true;   
+                isunique=false;   
             }
         }
-        if(!isunique){
+        if(isunique){
             cout<<A[i]<<",";
         }
     }
