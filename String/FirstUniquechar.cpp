@@ -1,24 +1,24 @@
 #include <iostream>
 using namespace std;
-int Unique(string str){
+void Unique(string str){
     for(int i=0;i<str.length();i++){
-        bool found=true;
+        bool found=false;
         for(int j=0;j<str.length();j++){
             if(i!=j && str[i]==str[j]){
-                found=false;
+                found=true;
                 break;
             }
         }
-        if(found){
-            return str[i];
+        if(!found){
+            cout<<"The first unique char:"<< str[i];
+            return;
         }
     }
-    return -1;
+    cout<<"No unique char found";
 }
 
 int main() {
-    string str="abcdab";
-    char res=Unique(str);
-    cout<<res;
+    string str="abcdcdab";
+    Unique(str);
     return 0;
 }

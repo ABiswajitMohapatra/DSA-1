@@ -3,17 +3,19 @@
 using namespace std;
 void  print(string str1,string str2){
   for(int i=0;i<str1.length();i++){
-    bool found=false;
+    bool found=true;
     for(int j=0;j<str2.length();j++){
         if(str1[i]==str2[j]){
-         found=true;
+         found=false;
          break;
         }
     }
-    if(!found){
+    if(found){
         cout<<str1[i];
+        
     }
   }
+
 }
 int main() {
     string str1="biswajit";

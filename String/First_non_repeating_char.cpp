@@ -18,7 +18,7 @@ void Non_repeat(string str) {
 }
 
 int main() {
-    string str = "geeksforgeeks";
+    string str = "geeksforforgeeks";
     Non_repeat(str);
     return 0;
 }
